@@ -16,7 +16,7 @@
                 <div class="cover-container">
                     <img :src="detail.cover">
                 </div>
-                <div class="p-4" v-html="detail.description"></div>
+                <div class="cover-content p-4" v-html="detail.description"></div>
             </div>
 
         </div>
@@ -89,10 +89,16 @@ export default {
             max-height: 70vh;
             position: relative;
             overflow-y: scroll;
-            border-top: 1px solid gray;
+            // border-top: 1px solid gray;
             box-shadow: -2px 8px 7px -1px rgba(0,0,0,0.26) inset;
             -webkit-box-shadow: -2px 8px 7px -1px rgba(0,0,0,0.26) inset;
             -moz-box-shadow: -2px 8px 7px -1px rgba(0,0,0,0.26) inset;
+            
+            &.pt-2  {
+                font-family: sans-serif;
+                color: #161616 !important;
+                line-height: 20px;
+            }
         }
 
         img {
@@ -102,6 +108,8 @@ export default {
             margin: 0px auto;
 
         }
+
+
     }
     .detail-logo {
         width: 50px;
@@ -112,6 +120,11 @@ export default {
     .cover-container {
         max-height: 380px;
         overflow: hidden;
+        padding: 50px;
+    }
+
+    .cover-content {
+        background-color: #e8e8e8
     }
 
 </style>
