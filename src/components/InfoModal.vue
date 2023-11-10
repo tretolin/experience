@@ -80,7 +80,12 @@ export default {
             display: flex;
             justify-content: space-between;
             width: 100%;
-            & .close { cursor: pointer }
+            border: 1px solid #ddd;
+
+            & .close {
+                cursor: pointer;
+                padding:12px;
+            }
         }
         .description {
             text-align: justify;
@@ -90,9 +95,9 @@ export default {
             position: relative;
             overflow-y: scroll;
             // border-top: 1px solid gray;
-            box-shadow: -2px 8px 7px -1px rgba(0,0,0,0.26) inset;
-            -webkit-box-shadow: -2px 8px 7px -1px rgba(0,0,0,0.26) inset;
-            -moz-box-shadow: -2px 8px 7px -1px rgba(0,0,0,0.26) inset;
+            // box-shadow: -2px 8px 7px -1px rgba(0,0,0,0.26) inset;
+            // -webkit-box-shadow: -2px 8px 7px -1px rgba(0,0,0,0.26) inset;
+            // -moz-box-shadow: -2px 8px 7px -1px rgba(0,0,0,0.26) inset;
             
             &.pt-2  {
                 font-family: sans-serif;
@@ -121,6 +126,9 @@ export default {
         max-height: 380px;
         overflow: hidden;
         padding: 50px;
+        background-color: #e8e8e8;
+        border-radius: 6px;
+        overflow: hidden;
     }
 
     .cover-content {
